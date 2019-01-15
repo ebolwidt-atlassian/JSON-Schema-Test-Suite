@@ -29,6 +29,11 @@
                 "valid": false
             },
             {
+                "description": "objects with different property order are still non-unique",
+                "data": [{"foo": "bar", "bar": "baz"}, {"bar": "baz", "foo": "bar"}],
+                "valid": false
+            },
+            {
                 "description": "unique array of nested objects is valid",
                 "data": [
                     {"foo": {"bar" : {"baz" : true}}},
